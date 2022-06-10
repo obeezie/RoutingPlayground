@@ -2,7 +2,7 @@ from flask import Flask, render_template
 app = Flask(__name__)
 
 @app.route('/play/<string:color>/<int:x>')
-def play(color = "blue", x = 1):
+def play(color, x):
     return render_template("index.html", color = color, x = x)
 
 
